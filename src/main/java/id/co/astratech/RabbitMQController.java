@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RabbitMQController {
 
-    private static final String queue = "polmanQeueu";
+    private static final String queue = "dickyQueue";
 
     @RabbitListener(queues = queue)
     public void processMessage(String message) {
